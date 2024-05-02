@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import Event from "../models/event";
-import StudentHomePage from "./component/studentHomePage";
-import StudentQuestionsPage from "./component/StudentquePage";
-import StudentSolutionsPage from "./component/StudentSolutionPage";
-import WaitingPage from "./component/WaitingPage";
+import Event from "../../models/event";
+import StudentHomePage from "./studentHomePage";
+import StudentQuestionsPage from "./StudentquePage";
+import StudentSolutionsPage from "./StudentSolutionPage";
+import WaitingPage from "./WaitingPage";
 
 
 

@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#mainCard{
+    background: linear-gradient(199.78deg, #323850 5.77%, #2A3047 26.26%, #23293F 61.56%, #1E243A 90.4%);
+}

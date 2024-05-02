@@ -40,7 +40,7 @@ const LaunchPage = () => {
   return (
     <div className="flex justify-center items-center px-12 py-12 bg-gray-800 max-md:px-5">
       <div className="bg-black flex h-screen flex-col px-0 py-0 mt-8 rounded-3xl w-[386px] max-md:px-0 max-md:mt-0`">
-        <div className="text-white text-3xl font-normal font-['Comic Sans MS']">Quiz Code</div>
+        <div className="text-white text-3xl ml-3 font-normal font-['Comic Sans MS']">Quiz Code</div>
         <div className="w-[350px] h-[100px] mt-20 ml-5 mb-10  relative">
           <div className="w-[350px] h-[100px] left-0 top-0 absolute  bg-black rounded-[20px] border-2 border-neutral-400"></div>
           <div className="left-[117px] top-[22px] absolute text-white text-[40px] font-normal font-['Comic Sans MS']">XXXX</div>
@@ -52,8 +52,8 @@ const LaunchPage = () => {
           <img className="w-12 h-12 left-[176px] top-[26px] absolute" src="utils/icons/launchBtn.png"/>
         </div>
         <div className="mt-20">
-          <div className="bg-[#222222] border-solid h-20 rounded-md mt-10 mb-0 mx-0">
-            <img className="w-14 my-2 mr-0 ml-80 cursor-pointer" src="public/utils/icons/nxtBtn.png"/>
+          <div className="bg-[#222222] border-solid h-20 rounded-md mt-10 p-2 mb-0 mx-0">
+            <img className="w-14 ml-80  cursor-pointer" src="public/utils/icons/nxtBtn.png"/>
           </div>
         </div>
       </div>

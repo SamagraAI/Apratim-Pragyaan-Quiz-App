@@ -55,12 +55,12 @@ const QuestionsPage = ()=>{
         <div className="flex justify-center items-center px-12 py-12 bg-gray-800 max-md:px-5">
                 <div className="bg-black flex h-screen flex-col px-0 py-0 mt-8 rounded-3xl w-[386px] max-md:px-0 max-md:mt-0`">
     <div className="w-[233px] h-[35px] text-center text-neutral-400 text-[25px] font-normal font-['Comic Sans MS']">Entry Code: 1234</div>
-    <img className="w-12 h-12" src="Samagra/SamagraAI-frontend/src/utils/icons/idea.png" />
+    <img className="w-12 h-12 ml-80 " src="utils/icons/idea.png" />
     <div className="w-[233px] h-[68px] text-center text-stone-300 text-[40px] font-normal font-['Comic Sans MS']">Timer : 25</div>
     <div className="w-[385px] h-[222px] relative">
         <div className="w-[350px] h-[100px] left-0 m-6 top-0 flex justify-center content-center bg-neutral-800 rounded-[40px] border border-neutral-400"></div>
-        <div className="w-[7px] h-[41px] left-[372px] top-[42px] absolute bg-neutral-400 rounded-[20px]"></div>
-        <div className="w-30 h-[82.04px] left-[81px] top-[70px] absolute text-center text-stone-300 text-[40px] font-normal font-['Comic Sans MS']">{questionText}</div>
+        {/* <div className="w-[7px] h-[41px] left-[372px] top-[42px] mt-10 absolute bg-neutral-400 rounded-[20px]"></div> */}
+        <div className="w-30 h-[82.04px] left-[90px] top-[40px] absolute text-center text-stone-300 text-[30px] font-normal font-['Comic Sans MS']">{questionText}</div>
     </div>
     <div className="w-[340px] h-screen relative">
         <div className="w-[385px] h-[350px] left-0 top-0 flex bg-red-500 rounded-[40px]"></div>
@@ -84,7 +84,7 @@ const QuestionsPage = ()=>{
         </div>
     </div>
     <div onClick = {solutionBtnHandler} className="bg-[#222222] border-solid h-20 rounded-md mt-5 mb- mx-0">
-            <img  src="src/Frontend/utils/icons/nextBtn.png" className="w-14 my-2 mr-0 ml-80 cursor-pointer" alt="LaunchPage " />
+            <img  src="utils/icons/nextBtn.png" className="w-14 my-2 mr-0 ml-80 cursor-pointer" alt="NextBtn" />
     </div>
 </div>
 

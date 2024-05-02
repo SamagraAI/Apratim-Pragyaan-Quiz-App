@@ -27,7 +27,7 @@ const Login = () => {
           <div id="mainCard"className="flex flex-col px-8 py-8 mt-0 rounded-3xl w-[386px] max-md:px-4 max-md:mt-8`">
             <img
               loading="lazy"
-              src="src\utils\image\Logo.png"
+              src="utils/image/Logo.png"
               alt="Apratim Pragyan logo"
               className="w-48 max-w-full aspect-[2.27]"
             />
@@ -42,7 +42,7 @@ const Login = () => {
             className="flex gap-5 py-2.5 pr-3 pl-9 mt-52 text-2xl text-black bg-white rounded-[30px] max-md:pl-5 max-md:mt-10">
               <img
                 loading="lazy"
-                src="src\utils\image\GoogleLogo.jpg"
+                src="utils/image/GoogleLogo.jpg"
                 alt="Google logo"
                 className="shrink-0 w-10 aspect-[0.88]"
               />

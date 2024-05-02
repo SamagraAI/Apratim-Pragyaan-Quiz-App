@@ -25,7 +25,7 @@ const StudentQuestionsPage = () => {
   return (
     <div className="flex justify-center items-center px-12 py-12 bg-gray-800 max-md:px-5">
     <div class="w-[430px] h-[932px] relative bg-black flex-col justify-start items-start inline-flex">
-<img class="w-12 h-12" src="https://via.placeholder.com/48x48" />
+<img class="w-12 h-12" src="utils/icons/info.png" />
 <div class="w-[233px] h-[68px] text-center text-stone-300 text-[40px] font-normal font-['Comic Sans MS']">Timer : 25</div>
 <div class="w-[385px] h-[222px] mx-5 mb-10 relative">
     <div class="w-[385px] h-[222px] left-0 top-0 absolute bg-neutral-800 rounded-[40px] border border-neutral-400"></div>
@@ -60,7 +60,7 @@ const StudentQuestionsPage = () => {
 </div>
 <div class="w-[430px] h-[77px] relative">
     <div class="w-[430px] h-[77px] left-0 top-0 absolute bg-neutral-800"></div>
-    <img class="w-12 h-12 left-[19px] top-[14px] absolute" src="https://via.placeholder.com/48x48" />
+    {/* <img class="w-12 h-12 left-[19px] top-[14px] absolute" src="https://via.placeholder.com/48x48" /> */}
 </div>
 </div>
 </div>

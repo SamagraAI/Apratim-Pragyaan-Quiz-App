@@ -1,4 +1,4 @@
-import StudentEventComponent from "./Frontend/StudentComponent";
+import StudentEventComponent from "./Frontend/component/StudentComponent";
 import StudentHomePage from "./Frontend/component/studentHomePage";
 import Login from "./components/auth/login";
 
@@ -14,11 +14,14 @@ import QuestionsPage from "./Frontend/MastersComponent/QuestionsPage";
 import StudentSolutionsPage from "./Frontend/component/StudentSolutionPage";
 import SolutionsPage from "./Frontend/MastersComponent/SolutionsPage";
 import End from "./Frontend/MastersComponent/EndQuiz";
+import StudentQuestionsPage from "./Frontend/component/StudentquePage";
+import WaitingPage from "./Frontend/component/WaitingPage";
+import SuccessPage from "./Frontend/MastersComponent/SuccessPage";
 function App() {
   const routesArray = [
     {
       path: "*",
-      element: <StudentEventComponent />,
+      element: <Login/>,
     },
     {
       path: "/login",
@@ -38,9 +41,30 @@ function App() {
       element: <SolutionsPage/>,
     },
     {
+      path: "/studentComponent",
+      element: <StudentEventComponent/>,
+    },
+    {
+      path: "/studentQuestion",
+      element: <StudentQuestionsPage/>,
+    },
+    {
+      path: "/studentSoltion",
+      element: <StudentSolutionsPage/>,
+    },
+    {
+      path: "/succesQuiz",
+      element: <SuccessPage/>,
+    },
+    {
+      path: "/launch",
+      element: <LaunchPage/>,
+    },
+    {
       path: "/end",
       element: <End/>,
     },
+
   ];
   let routesElement = useRoutes(routesArray);
   
