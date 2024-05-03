@@ -1,8 +1,9 @@
 import StudentEventComponent from "./Frontend/component/StudentComponent";
 import StudentHomePage from "./Frontend/component/studentHomePage";
 import Login from "./components/auth/login";
-
+import Question from "./models/question";
 import Home from "./components/home";
+import Option from "./models/option";
 
 import { AuthProvider } from "./contexts/authContext";
 import { useRoutes } from "react-router-dom";
@@ -17,11 +18,12 @@ import End from "./Frontend/MastersComponent/EndQuiz";
 import StudentQuestionsPage from "./Frontend/component/StudentquePage";
 import WaitingPage from "./Frontend/component/WaitingPage";
 import SuccessPage from "./Frontend/MastersComponent/SuccessPage";
+import HomePage from "./Frontend/MastersComponent/HomePage";
 function App() {
   const routesArray = [
     {
       path: "*",
-      element: <Login/>,
+      element: <SolutionsPage/>,
     },
     {
       path: "/login",
@@ -121,7 +123,7 @@ export default App;
 // fetchAllEvents();
 
 
-// const option = new Option("Option001", "Qu001", "Option A", true);
+// const option = new Option(4, 5, "wq", true);
 // option.save(); // Save the option to Firestore
 
 // // Update the option
@@ -135,7 +137,7 @@ export default App;
 
 
 
-// const question = new Question("Qu001", "Qz001", "What is 2 + 2?", "Explanation goes here", 1, -1, "MCQ");
+// const question = new Question(2, 1, "What is first alphabet", "apple related", 1, -1, "MCQ");
 // question.save(); // Save the question to Firestore
 
 // // Update the question
