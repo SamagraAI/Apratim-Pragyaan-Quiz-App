@@ -1,6 +1,8 @@
 import React from 'react'
 import { useAuth } from '../../contexts/authContext'
 import Login  from "../auth/login/index.jsx"
+import { useNavigate,Navigate } from 'react-router-dom'
+
 // // Check if user is logged in
 // firebase.auth().onAuthStateChanged(function(user) {
 //     if (user) {
@@ -12,19 +14,20 @@ import Login  from "../auth/login/index.jsx"
 //     }
 //   });
 
-const Home = () => {
-    const { userLoggedIn } = useAuth()
+const UserChanged = () => {
+    const { userLoggedIn} = useAuth()
     const { currentUser } = useAuth()
-    return (
-      <div> {
-            userLoggedIn
-            ?
-                <><div className='text-2xl font-bold pt-14'>Hello {currentUser.displayName ? currentUser.displayName : currentUser.email}, you are now logged in.</div></>
-            :
-                <><Login/></>
-        }
-        </div> 
-    )
+   const {isQm} = useAuth(); 
+    const {navigate} = useNavigate();  
+    if(userLoggedIn){
+        if(isQm)
+            {
+                return <Navigate to="/launch" />;
+            }
+            else{
+                return <Navigate to="/studentComponent" />;
+            }
+    }
 }
 
-export default Home
+export default UserChanged; 

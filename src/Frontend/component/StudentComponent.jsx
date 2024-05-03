@@ -12,26 +12,20 @@ const StudentEventComponent = () => {
   const [event, setEvent] = useState(new Event(1,1,1,1,1,1,1,1,1));
 
   useEffect(() => {
-    // Fetch the current running event (assuming event id is 1)
     const fetchRunningEvent = async () => {
       try {
-
         const runningEvent = await Event.getRunningEvent(1); // Change the event ID accordingly
         setEvent(runningEvent);
       } catch (error) {
         console.error("Error fetching event:", error);
       }
     };
-
+  
     fetchRunningEvent();
-
-    // Cleanup function
-    return () => {
-      // Perform cleanup if needed
-      event.Total_Active = event.Total_Active -1;
-      event.update();
-    };
-  }, []);
+  
+    // No need for cleanup function
+  
+  }, [event]);
 
   if (!event) {
     return <div>Loading...</div>;

@@ -81,7 +81,8 @@ async function initializeUser(user) {
     isEmailUser,
     isGoogleUser,
     currentUser,
-    setCurrentUser
+    setCurrentUser,
+    isQm,
   };
 
   return (
@@ -90,3 +91,7 @@ async function initializeUser(user) {
     </AuthContext.Provider>
   );
 }
+
+export const userCheck = ()=>{
+  return userLoggedIn; 
+} 

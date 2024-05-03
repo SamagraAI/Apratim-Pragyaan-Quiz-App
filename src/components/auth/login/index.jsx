@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
-import { Navigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { doSignInWithGoogle } from '../../../firebase/auth'
 import { useAuth } from '../../../contexts/authContext'
+import { userCheck } from '../../../contexts/authContext'
 
 const Login = () => {
     const { userLoggedIn } = useAuth()
+    const {navigate} = useNavigate(); 
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -21,7 +23,10 @@ const Login = () => {
             })
         }
     }
-
+    if (userLoggedIn)
+    {
+        navigate("/userChange")
+    }
     return (
         <div className="flex justify-center items-center px-12 py-12 bg-gray-800 max-md:px-5">
           <div id="mainCard"className="flex flex-col px-8 py-8 mt-0 rounded-3xl w-[386px] max-md:px-4 max-md:mt-8`">

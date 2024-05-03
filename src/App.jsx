@@ -17,11 +17,13 @@ import End from "./Frontend/MastersComponent/EndQuiz";
 import StudentQuestionsPage from "./Frontend/component/StudentquePage";
 import WaitingPage from "./Frontend/component/WaitingPage";
 import SuccessPage from "./Frontend/MastersComponent/SuccessPage";
+import UserChanged from "./components/home";
+
 function App() {
   const routesArray = [
     {
       path: "*",
-      element: <Login/>,
+      element: <UserChanged/>,
     },
     {
       path: "/login",
@@ -63,6 +65,10 @@ function App() {
     {
       path: "/end",
       element: <End/>,
+    },
+    {
+      path: "/userChange",
+      element: <UserChanged/>,
     },
 
   ];
