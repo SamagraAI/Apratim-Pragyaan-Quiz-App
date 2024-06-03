@@ -28,6 +28,7 @@ const UserChanged = () => {
                 return <Navigate to="/studentComponent" />;
             }
     }
+    return <Navigate to="/login" />;
 }
 
 export default UserChanged; 
